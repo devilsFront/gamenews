@@ -1,0 +1,31 @@
+-
+  const box = [
+    {text: "Новости", color: "blue"},
+    {text: "Статьи", color: "red"},
+    {text: "Игры", color: "green"},
+    {text: "Железо", color: "yellow"},
+    {text: "Кино", color: "orange"},
+    {text: "Видео", color: "purple"},
+  ]
+
+article.index-banners(data-element="index-banners")
+  .index-banners__cont.cont
+    button.index-banners__button.index-banners__button_prev(data-element="index-banners__button_prev")
+    button.index-banners__button.index-banners__button_next(data-element="index-banners__button_next")
+    .index-banners__wrapper
+      each area in [1,2,3]
+        .index-banners__area(class= area === 1 ? 'index-banners__area_active': '' data-element="index-banners__area")
+          .index-banners__box
+            each item in box
+              a.index-banners__item(href='#' class=`index-banners__item_${item.color}`)
+                span.index-banners__tag= item.text
+                .index-banners__info
+                  p.index-banners__title Обзор Cris Tale
+                  span.index-banners__text Тратат атат тата а тат ат ат тат
+                picture.index-banners__picture
+                  source(srcset=placeholder(275, 150, 2) media="(max-width: 1240px)")
+                  img.index-banners__image(src=placeholder(366, 200) alt='' loading="lazy")
+      .index-banners__nav
+        each navItem in [0,1,2]
+          button.index-banners__nav-button(data-element="index-banners__nav-button" data-index=navItem class= navItem === 0 ? "index-banners__nav-item_active": "")
+            .index-banners__nav-point

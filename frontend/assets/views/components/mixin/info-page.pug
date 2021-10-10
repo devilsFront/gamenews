@@ -1,0 +1,7 @@
+mixin info-page(title, text, link)
+  article.info-page
+    .info-page__cont.cont
+      h1.info-page__caption.caption= title
+      p.info-page__text= text
+      if link
+        a.info-page__link.link_white-color.link_white-blue(href='#') На главную

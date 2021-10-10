@@ -1,0 +1,45 @@
+article.post(data-element="post")
+  h1.post__caption.caption Поклонники Half-Life 2 поставили рекорд посещаемости
+  ul.post__crumbs
+    li.post__crumbs-item
+      a.post__crumbs-link.text-small(href="#") Главная
+    li.post__crumbs-item
+      a.post__crumbs-link.text-small(href="#") Статьи
+    li.post__crumbs-item
+      span.post__crumbs-link.text-small Косплей
+  .post__info
+    .post__info-box
+      .post__info-date.text-small 14.08.2021
+      .post__info-author.text-small Марк
+    .post__info-comment
+      span.post__info-comment-count.text-small 5555
+  .post__content
+    picture.post__picture
+      img.post__image(src=placeholder(800, 400) alt="" loading="lazy")
+    p.post__text Поклонники Half-Life 2 провели своеобразный флешмоб: сегодня, в 18:00 по московскому времени, они призвали всех, кто только может, запустить игру. Стримеры назначили на это время прохождение культового шедевра, новичкам посоветовали наконец познакомиться с игрой, а всех прочих — хотя бы просто запустить её.
+    iframe.post__video(width='560' height='315' src='https://www.youtube.com/embed/Dg09LJky-bw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    p.post__text Поклонники Half-Life 2 провели своеобразный флешмоб: сегодня, в 18:00 по московскому времени, они призвали всех, кто только может, запустить игру. Стримеры назначили на это время прохождение культового шедевра, новичкам посоветовали наконец познакомиться с игрой, а всех прочих — хотя бы просто запустить её.
+  .post__nav
+    a.post__nav-link.post__nav-link_prev.button_read.button_read-blue(href='#') Предыдущий пост
+    a.post__nav-link.post__nav-link_next.button_read.button_read-blue(href='#') Следующий пост
+  .post__comment-line
+    h4.post__comment-title Комментарии (8)
+    button.post__comment-link.button_read.button_read-blue(type="button" data-element="post__comment-link") Оставить комментарий
+  form.post__comment-form-main
+    textarea.post__comment-textarea-main(name="comment-text" data-element="post__comment-textarea-main")
+    button.post__comment-submit.button_read.button_read-blue Отправить
+  each comment in [1,2]
+    .post__comment
+      picture.post__comment-picture
+        source(srcset=placeholder(50, 50, 2), media="(max-width: 1240px)")
+        img.post__comment-image(src=placeholder(50, 50) alt="" loading="lazy")
+      .post__comment-inner
+        .post__comment-info
+          h4.post__comment-name.text-small Марк
+          span.post__comment-time.text-small 15.08.2021 00:24
+        .post__comment-text Лучше бы Четвёрку на актуальные платформы выпустили, в том числе и а мобилки. Не нужны нам старые части, которые по сто раз переиздают.
+        .post__comment-text.post__comment-text_answer Лучше бы Четвёрку на актуальные платформы выпустили, в том числе и а мобилки. Не нужны нам старые части, которые по сто раз переиздают.
+        button.post__comment-answer.button_read.button_read-blue(type="button" data-element="post__comment-answer") Ответить
+        form.post__comment-form
+          textarea.post__comment-textarea(name="comment-text")
+          button.post__comment-submit.button_read.button_read-blue Отправить

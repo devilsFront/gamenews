@@ -1,0 +1,9 @@
+article.pagination
+  .pagination__area
+    ul.pagination__list
+      each item, index in ["<",1,2,3,"...",5,">"]
+        li.pagination__item
+          if index === 1
+            span.pagination__link.pagination__link_blue= item
+          else
+            a.pagination__link.pagination__link_blue(href="#")= item

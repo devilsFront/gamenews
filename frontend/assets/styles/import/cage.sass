@@ -1,0 +1,26 @@
+.cage
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 50px
+
+.cage-mainbar
+  flex-shrink: 0
+  width: 800px
+  @include media(1240)
+    width: 100%
+
+.cage-sidebar
+  margin-left: 40px
+  flex-shrink: 0
+  width: 300px
+  @include media(1240)
+    display: none
+
+.cage-sidebar__box
+  margin-top: 130px
+  padding: 10px
+  border-radius: 8px
+  border: 2px solid $white
+
+.cage-sidebar__box_post
+  margin-top: 0

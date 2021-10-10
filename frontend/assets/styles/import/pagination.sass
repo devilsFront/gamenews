@@ -1,0 +1,111 @@
+.pagination
+
+.pagination__area
+  display: flex
+  justify-content: center
+
+.pagination__list
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -10px
+
+.pagination__item
+  margin: 0 10px
+  @include media(1240)
+    margin: 0 5px
+
+.pagination__link, .page-numbers
+  display: block
+  margin: 0 10px 10px
+  border: 2px solid $gray
+  border-radius: 8px
+  padding: 20px
+  color: $gray
+  text-decoration: none
+  @include media(1240)
+    padding: 5px
+    margin: 0 5px 5px
+
+span.current
+  border: 2px solid $white
+  color: $white
+  box-shadow: 0 0 10px $blue
+
+a.pagination__link, a.page-numbers
+  transition-property: border-color, color, box-shadow, text-shadow
+  transition-duration: .3s
+  &:hover
+    @include hover
+      border: 2px solid $white
+
+a.pagination__link_blue, a.page-numbers
+  &:hover
+    @include hover
+      color: $white
+      box-shadow: 0 0 10px $blue
+      text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 40px $blue
+
+a.pagination__link_red
+  &:hover
+    @include hover
+      color: $white
+      box-shadow: 0 0 10px $red
+      text-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 40px $red
+
+a.pagination__link_green
+  &:hover
+    @include hover
+      color: $white
+      box-shadow: 0 0 10px $green
+      text-shadow: 0 0 10px $green, 0 0 20px $green, 0 0 40px $green
+
+a.pagination__link_yellow
+  &:hover
+    @include hover
+      color: $white
+      box-shadow: 0 0 10px $yellow
+      text-shadow: 0 0 10px $yellow, 0 0 20px $yellow, 0 0 40px $yellow
+
+a.pagination__link_orange
+  &:hover
+    @include hover
+      color: $white
+      box-shadow: 0 0 10px $orange
+      text-shadow: 0 0 10px $orange, 0 0 20px $orange, 0 0 40px $orange
+
+a.pagination__link_purple
+  &:hover
+    @include hover
+      color: $white
+      box-shadow: 0 0 10px $purple
+      text-shadow: 0 0 10px $purple, 0 0 20px $purple, 0 0 40px $purple
+
+span.pagination__link
+  border: 2px solid $white
+  color: $white
+
+span.pagination__link_blue
+  box-shadow: 0 0 10px $blue
+  text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 40px $blue
+
+span.pagination__link_red
+  box-shadow: 0 0 10px $red
+  text-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 40px $red
+
+span.pagination__link_green
+  box-shadow: 0 0 10px $green
+  text-shadow: 0 0 10px $green, 0 0 20px $green, 0 0 40px $green
+
+span.pagination__link_yellow
+  box-shadow: 0 0 10px $yellow
+  text-shadow: 0 0 10px $yellow, 0 0 20px $yellow, 0 0 40px $yellow
+
+span.pagination__link_orange
+  box-shadow: 0 0 10px $orange
+  text-shadow: 0 0 10px $orange, 0 0 20px $orange, 0 0 40px $orange
+
+span.pagination__link_purple
+  box-shadow: 0 0 10px $purple
+  text-shadow: 0 0 10px $purple, 0 0 20px $purple, 0 0 40px $purple
+
+

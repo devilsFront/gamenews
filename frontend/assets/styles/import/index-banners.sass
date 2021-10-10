@@ -1,0 +1,185 @@
+.index-banners
+  margin-bottom: 50px
+  @include media(1240)
+    margin-bottom: 30px
+
+.index-banners__cont
+  position: relative
+
+.index-banners__button
+  position: absolute
+  z-index: 1
+  top: calc(50% - 60px)
+  width: 50px
+  height: 50px
+  background-color: $white
+  border: none
+  border-radius: 50%
+  transition-property: box-shadow
+  transition-duration: .3s
+  &:hover
+    @include hover
+      box-shadow: 0 0 5px $blue, 0 0 10px $blue, 0 0 20px $blue
+  @include media(1240)
+    display: none
+
+.index-banners__button_prev
+  left: 5px
+  +bgIcon('ic_left-arrow.svg', 20px, 20px)
+  background-position: 13px center
+
+.index-banners__button_next
+  right: 5px
+  +bgIcon('ic_right-arrow.svg', 20px, 20px)
+  background-position: 17px center
+
+.index-banners__wrapper
+  @include media(1240)
+    display: flex
+    margin: 0 -15px
+    overflow: scroll
+    &::before, &::after
+      content: ""
+      width: 6px
+      flex-shrink: 0
+
+.index-banners__area
+  display: none
+  @include media(1240)
+    display: block
+    margin: 0 10px
+
+.index-banners__area_active
+  display: block
+
+.index-banners__box
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -10px
+  @include media(1240)
+    flex-wrap: nowrap
+
+.index-banners__item
+  flex-shrink: 0
+  position: relative
+  margin: 0 10px 20px
+  width: 366px
+  border-radius: 8px
+  transition-property: transform
+  transition-duration: .2s
+  &:hover
+    @include hover
+      transform: translateY(-4px)
+  @include media(1240)
+    width: 275px
+
+.index-banners__item_blue
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $blue, 0 0 20px $blue
+
+.index-banners__item_red
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $red, 0 0 20px $red
+
+.index-banners__item_green
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $green, 0 0 20px $green
+
+.index-banners__item_yellow
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $yellow, 0 0 20px $yellow
+
+.index-banners__item_orange
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $orange, 0 0 20px $orange
+
+.index-banners__item_purple
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $purple, 0 0 20px $purple
+
+.index-banners__tag
+  position: absolute
+  top: 20px
+  left: 20px
+  padding: 5px
+  background-color: $black
+  font-size: 16px
+  line-height: 16px
+  @include media(1240)
+    top: 10px
+    left: 10px
+    font-size: 14px
+    line-height: 14px
+
+.index-banners__info
+  position: absolute
+  bottom: 10px
+  left: 20px
+  right: 20px
+  @include media(1240)
+    bottom: 10px
+    left: 10px
+    right: 10px
+
+.index-banners__title
+  margin-bottom: 5px
+  font-size: 25px
+  line-height: 25px
+  text-shadow: 0 0 4px $gray
+  @include media(1240)
+    font-size: 20px
+    line-height: 20px
+
+.index-banners__text
+  display: block
+  text-shadow: 0 0 4px $gray
+  font-size: 16px
+  line-height: 16px
+  @include media(1240)
+    font-size: 14px
+    line-height: 14px
+
+.index-banners__picture
+
+.index-banners__image
+  height: 206px
+  border-radius: 8px
+  @include media(1240)
+    height: 155px
+
+.index-banners__nav
+  display: flex
+  justify-content: center
+  @include media(1240)
+    display: none
+
+.index-banners__nav-button
+  padding: 20px
+  background-color: transparent
+  border: none
+  &:hover
+    @include hover
+      .index-banners__nav-point
+        background-color: $white
+        box-shadow: 0 0 10px $blue, 0 0 10px $blue, 0 0 20px $blue
+
+.index-banners__nav-item_active
+  cursor: default
+  .index-banners__nav-point
+    background-color: $white
+    box-shadow: 0 0 10px $blue, 0 0 10px $blue, 0 0 20px $blue
+
+.index-banners__nav-point
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background-color: $gray
+  border: none
+  transition-property: background-color, box-shadow
+  transition-duration: .2s

@@ -1,0 +1,19 @@
+article.search
+  .search__cont.cont
+    h1.search__caption.caption.caption_white-blue Результаты поиска
+    .search__tile
+      - for (let i = 0; i < 10; i++)
+        .search__tile-box.search__tile-box_blue
+          picture.search__tile-picture
+            source(srcset=placeholder(288, 144, 2) media="(max-width: 1240px)")
+            img.search__tile-image(src=placeholder(300, 200))
+          .search__tile-wrapper
+            .search__tile-inner
+              h2.search__tile-title.title Игрушечный градостроительный симулятор Tinytopia выходит 30 августа
+              p.search__tile-text В Steam, Microsoft Store, Epic Games Store и GOG.
+              a.search__tile-read.button_read.button_read-blue(href="#") ЧИТАТЬ ДАЛЕЕ
+            .search__tile-info
+              .search__tile-info-box
+                .search__tile-time 13.08.2021
+                .search__tile-author Марк
+              .search__tile-type Игровые новости

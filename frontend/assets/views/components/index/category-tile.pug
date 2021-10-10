@@ -1,0 +1,23 @@
+mixin category-tile(title, color)
+  article.category-tile
+    h2.category-tile__title.title
+      a.link_white-color(href="#" class=`link_white-${color}`)= title
+    ul.category-tile__header-list
+      each item, index in ["Все","Игровые","Косплей"]
+        li.category-tile__header-item
+          button.category-tile__header-item-btn.button_category(type="button" class=`button_category-${color}` class= index === 0 ?`button_category-${color}-active`: '')= item
+    .category-tile__tile
+      each item in [1,2,3,4,5,6]
+        a.category-tile__tile-item(href="#" class=`category-tile__tile-item_${color}`)
+          picture.category-tile__tile-picture
+            source(srcset=placeholder(330, 180, 2) media="(max-width: 520px)")
+            source(srcset=placeholder(470, 257) media="(max-width: 700px)")
+            source(srcset=placeholder(320, 175) media="(max-width: 950px)")
+            source(srcset=placeholder(278, 152) media="(max-width: 1240px)")
+            img.category-tile__tile-image(src=placeholder(260, 200) alt="" loading="lazy")
+          p.category-tile__tile-text Ассассин, монах, ниндзя и рестлер сражаются в первом трейлере Blazing Strike
+          .category-tile__info
+            span.category-tile__date 8.08
+            span.category-tile__comment 1
+    .category-tile__more-box
+      a.category-tile__more-btn.button_more(href="#" class=`button_more-${color}`) Смотреть всё

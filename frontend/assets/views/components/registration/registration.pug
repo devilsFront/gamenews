@@ -1,0 +1,33 @@
+article.registration
+  .registration__cont.cont
+    h1.registration__caption.caption
+      span Р
+      span е
+      span г
+      span и
+      span с
+      span т
+      span р
+      span а
+      span ц
+      span и
+      span я
+    p.registration__text
+      | Уже зарегистрированы?
+      |
+      a.registration__link.link_white-blue.link_white-color(href="#") Войти
+    p.registration__error.form-error.caption_white-red(data-element="form-error") Пользователь
+    form.registration__form(data-role="validation__form")
+      label.registration__label.form-label
+        input.registration__input.form-input(name="name" type="text" data-role="form-input" required max-length=10 placeholder="не более 10 символов")
+        span.registration__name.form-name Логин
+      label.registration__label.form-label
+        input.registration__input.form-input(name="mail" type="email" data-role="form-input" required)
+        span.registration__name.form-name Почта
+      label.registration__label.form-label
+        input.registration__input.form-input(name="password" data-element="password" data-role="form-input" placeholder="от 8 до 20 символов" type="password" required minlength=8 maxlength=20)
+        span.registration__name.form-name Пароль
+      label.registration__label.form-label
+        input.registration__input.form-input(name="password2" data-element="password2" data-role="form-input" placeholder="от 8 до 20 символов" type="password" required minlength=8 maxlength=20)
+        span.registration__name.form-name Повторите пароль
+      button.registration__button.button_read.button_read-blue.form-button(disabled=true data-role="form-button") Зарегистрироваться

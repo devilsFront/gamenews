@@ -1,0 +1,48 @@
+$white: #ffffff
+$dark: #231F20
+$gray: #8e8d8d
+$black: #000000
+$blue: #03bcf4
+$red: #e31616
+$green: #2bde1d
+$yellow: #deca1d
+$orange: #d79118
+$purple: #9418d7
+$light-gray: #adadad
+$red-wrong: #1f0000
+
+$fc_white: $white
+$fc_dark: $dark
+$fc_gray: $gray
+$fc_black: $black
+$fc_blue: $blue
+$fc_red: $red
+$fc_green: $green
+$fc_yellow: $yellow
+$fc_orange: $orange
+$fc_purple: $purple
+$fc_light-gray: $light-gray
+
+// bp 1240, 950, 700, 520
+@mixin media($bp-size)
+  @media (max-width: $bp-size + px)
+    @content
+
+@mixin media_min($bp-size)
+  @media (min-width: $bp-size + 0.1 + px)
+    @content
+
+@mixin hover
+  @include media_min(1240)
+    @content
+
+$imgPath: 'img/'
+
+@mixin bgImg($img)
+  background-image: url($imgPath + $img)
+
+@mixin bgIcon($img, $w: 100%, $h: 100%)
+  background-image: url($imgPath + $img)
+  background-size: $w $h
+  background-repeat: no-repeat
+  background-position: center center

@@ -1,0 +1,64 @@
+.form-label
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 20px
+  cursor: pointer
+  &:hover
+    .form-input
+      border: 1px solid rgba($white, 1)
+      background-color: $white
+      box-shadow: 0 0 10px $blue
+      & + .form-name
+        color: $white
+        text-shadow: 0 0 5px $blue
+
+.form-label_wrong
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 20px
+  cursor: pointer
+  .form-input
+    border: 1px solid rgba($white, 1)
+    background-color: $white
+    box-shadow: 0 0 10px $red
+    & + .form-name
+      color: $fc_red
+      text-shadow: 0 0 5px $red
+    &:focus
+      box-shadow: 0 0 10px $red
+      & + .form-name
+        color: $fc_red
+        text-shadow: 0 0 5px $red
+
+.form-label_alright
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 20px
+  cursor: pointer
+  .form-input
+    border: 1px solid rgba($white, 1)
+    background-color: $white
+    box-shadow: 0 0 10px $green
+    & + .form-name
+      color: $fc_green
+      text-shadow: 0 0 5px $green
+    &:focus
+      box-shadow: 0 0 10px $green
+      & + .form-name
+        color: $fc_green
+        text-shadow: 0 0 5px $green
+
+.form-button
+  margin: 0 auto
+  border: none
+  font-size: 20px
+  @include media(1240)
+    font-size: 14px
+  &:disabled
+    opacity: .5
+    &:hover
+      @include hover
+        background-color: transparent
+        text-shadow: none
+        box-shadow: none
+        cursor: unset

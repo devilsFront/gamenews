@@ -1,0 +1,182 @@
+.button_category
+  border-radius: 8px
+  background-color: transparent
+  border: none
+  color: $fc_gray
+  transition-property: color, background-color, box-shadow
+  transition-duration: .3s
+  &:hover
+    @include hover
+      color: $fc_white
+
+.button_category-blue
+  &:hover
+    @include hover
+      background-color: rgba($blue, .6)
+      box-shadow: 0 0 10px $blue, 0 0 20px $blue
+
+.button_category-blue-active
+  color: $fc_white
+  background-color: rgba($blue, .6)
+  box-shadow: 0 0 10px $blue, 0 0 20px $blue
+
+.button_category-red
+  &:hover
+    @include hover
+      background-color: rgba($red, .6)
+      box-shadow: 0 0 10px $red, 0 0 20px $red
+
+.button_category-red-active
+  color: $fc_white
+  background-color: rgba($red, .6)
+  box-shadow: 0 0 10px $red, 0 0 20px $red
+
+.button_category-green
+  &:hover
+    @include hover
+      background-color: rgba($green, .6)
+      box-shadow: 0 0 10px $green, 0 0 20px $green
+
+.button_category-green-active
+  color: $fc_white
+  background-color: rgba($green, .6)
+  box-shadow: 0 0 10px $green, 0 0 20px $green
+
+.button_category-yellow
+  &:hover
+    @include hover
+      background-color: rgba($yellow, .6)
+      box-shadow: 0 0 10px $yellow, 0 0 20px $yellow
+
+.button_category-yellow-active
+  color: $fc_white
+  background-color: rgba($yellow, .6)
+  box-shadow: 0 0 10px $yellow, 0 0 20px $yellow
+
+.button_category-orange
+  &:hover
+    @include hover
+      background-color: rgba($orange, .6)
+      box-shadow: 0 0 10px $orange, 0 0 20px $orange
+
+.button_category-orange-active
+  color: $fc_white
+  background-color: rgba($orange, .6)
+  box-shadow: 0 0 10px $orange, 0 0 20px $orange
+
+.button_category-purple
+  &:hover
+    @include hover
+      background-color: rgba($purple, .6)
+      box-shadow: 0 0 10px $purple, 0 0 20px $purple
+
+.button_category-purple-active
+  color: $fc_white
+  background-color: rgba($purple, .6)
+  box-shadow: 0 0 10px $purple, 0 0 20px $purple
+
+.button_more
+  background: transparent
+  padding: 15px
+  border: 2px solid $gray
+  border-radius: 8px
+  text-transform: uppercase
+  letter-spacing: 5px
+  color: $fc_gray
+  transition-property: color, border-color, text-shadow
+  transition-duration: .3s
+  &:hover
+    @include hover
+      color: $fc_white
+      border: 2px solid $white
+
+.button_more-blue
+  &:hover
+    @include hover
+      text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 40px $blue
+      box-shadow: 0 0 10px $blue
+
+.button_more-red
+  &:hover
+    @include hover
+      text-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 40px $red
+      box-shadow: 0 0 10px $red
+
+.button_more-green
+  &:hover
+    @include hover
+      text-shadow: 0 0 10px $green, 0 0 20px $green, 0 0 40px $green
+      box-shadow: 0 0 10px $green
+
+.button_more-yellow
+  &:hover
+    @include hover
+      text-shadow: 0 0 10px $yellow, 0 0 20px $yellow, 0 0 40px $yellow
+      box-shadow: 0 0 10px $yellow
+
+.button_more-orange
+  &:hover
+    @include hover
+      text-shadow: 0 0 10px $orange, 0 0 20px $orange, 0 0 40px $orange
+      box-shadow: 0 0 10px $orange
+
+.button_more-purple
+  &:hover
+    @include hover
+      text-shadow: 0 0 10px $purple, 0 0 20px $purple, 0 0 40px $purple
+      box-shadow: 0 0 10px $purple
+
+.button_read
+  text-align: center
+  display: block
+  background: transparent
+  padding: 15px
+  text-transform: uppercase
+  text-decoration: none
+  letter-spacing: 5px
+  color: $fc_white
+  transition-property: background-color, text-shadow, box-shadow
+  transition-duration: .3s
+
+.button_read-blue
+  &:hover
+    @include hover
+      background-color: $blue
+      text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 40px $blue
+      box-shadow: 0 0 10px rgba($blue, .6), 0 0 40px rgba($blue, .6), 0 0 60px rgba($blue, .6), 0 0 80px rgba($blue, .6)
+
+.button_read-red
+  &:hover
+    @include hover
+      background-color: $red
+      text-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 40px $red
+      box-shadow: 0 0 10px rgba($red, .6), 0 0 40px rgba($red, .6), 0 0 60px rgba($red, .6), 0 0 80px rgba($red, .6)
+
+.button_read-green
+  &:hover
+    @include hover
+      background-color: $green
+      text-shadow: 0 0 10px $green, 0 0 20px $green, 0 0 40px $green
+      box-shadow: 0 0 10px rgba($green, .6), 0 0 40px rgba($green, .6), 0 0 60px rgba($green, .6), 0 0 80px rgba($green, .6)
+
+.button_read-yellow
+  &:hover
+    @include hover
+      background-color: $yellow
+      text-shadow: 0 0 10px $yellow, 0 0 20px $yellow, 0 0 40px $yellow
+      box-shadow: 0 0 10px rgba($yellow, .6), 0 0 40px rgba($yellow, .6), 0 0 60px rgba($yellow, .6), 0 0 80px rgba($yellow, .6)
+
+.button_read-orange
+  &:hover
+    @include hover
+      background-color: $orange
+      text-shadow: 0 0 10px $orange, 0 0 20px $orange, 0 0 40px $orange
+      box-shadow: 0 0 10px rgba($orange, .6), 0 0 40px rgba($orange, .6), 0 0 60px rgba($orange, .6), 0 0 80px rgba($orange, .6)
+
+.button_read-purple
+  &:hover
+    @include hover
+      background-color: $purple
+      text-shadow: 0 0 10px $purple, 0 0 20px $purple, 0 0 40px $purple
+      box-shadow: 0 0 10px rgba($purple, .6), 0 0 40px rgba($purple, .6), 0 0 60px rgba($purple, .6), 0 0 80px rgba($purple, .6)
+

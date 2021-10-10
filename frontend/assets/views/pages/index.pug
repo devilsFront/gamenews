@@ -1,0 +1,25 @@
+extends ../components/_layout/layout
+
+block head
+
+  title!= ''
+  meta(name="description", content!='')
+  link(rel="canonical" href='')
+  link(rel="image_src" href='')
+
+block body
+  include ../components/index/index-banners
+  .cage.cont
+    .cage-mainbar
+      include ../components/index/category-tile
+      +category-tile("Новости", "blue")
+      +category-tile("Статьи", "red")
+      +category-tile("Игры", "green")
+      +category-tile("Железо", "yellow")
+      +category-tile("Кино", "orange")
+      +category-tile("Видео", "purple")
+    .cage-sidebar
+      .cage-sidebar__box
+        h3 Сайдбар
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat laoreet quam in vehicula. Curabitur tempus turpis ut odio lobortis vestibulum. Curabitur quis sapien eu magna tincidunt consequat. Suspendisse eget eros vitae tellus imperdiet elementum. Vestibulum maximus felis a sem iaculis fringilla. Aenean metus nulla, cursus ac elementum ut, tristique sed nibh. Morbi purus diam, ultrices nec efficitur at, convallis ac neque. Vivamus dictum nisl ac libero pretium pellentesque. In at eros elit.
+        p Suspendisse ultrices est mi, sed vehicula ligula pellentesque a. Nullam ac risus sem. Sed posuere lacinia pellentesque. Donec tempus arcu at dictum ornare. Proin nec aliquet arcu. Praesent sem ante, congue quis eros nec, iaculis luctus arcu. Sed sagittis ac felis in aliquam. Duis sed malesuada nibh, vel blandit tellus. Nam rutrum, elit non commodo vulputate, felis dolor vestibulum metus, vitae mollis magna tortor eget orci.

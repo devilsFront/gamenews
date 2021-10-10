@@ -1,0 +1,151 @@
+.category-tile
+  &:not(:last-of-type)
+    margin-bottom: 70px
+    @include media(1240)
+      margin-bottom: 50px
+
+.category-tile__title
+  display: inline-block
+  a
+    text-decoration: none
+    text-transform: uppercase
+
+.category-tile__header-list
+  display: flex
+  align-items: flex-end
+  margin: 0 -5px 20px
+  padding: 20px 0
+  overflow: auto
+  @include media(1240)
+    margin: 0 -15px 20px
+    &::after, &::before
+      content: ''
+      width: 5px
+      flex-shrink: 0
+
+.category-tile__header-item
+  margin: 0 5px
+
+.category-tile__header-item-btn
+  padding: 5px
+  font-size: 16px
+  line-height: 16px
+  text-transform: uppercase
+
+.category-tile__tile
+  display: none
+  flex-wrap: wrap
+  margin: 0 -5px
+  @include media(700)
+    margin: 0 0
+
+.category-tile__tile_active
+  display: flex
+
+.category-tile__tile-item
+  display: flex
+  flex-direction: column
+  border-radius: 8px
+  overflow: hidden
+  flex-shrink: 0
+  width: 260px
+  margin: 0 5px 10px
+  text-decoration: none
+  transition-duration: .2s
+  transition-property: box-shadow
+  @include media(1240)
+    width: 278px
+  @include media(950)
+    width: 320px
+  @include media(700)
+    margin: 0 0 10px
+    width: 100%
+
+.category-tile__tile-item_blue
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $blue, 0 0 20px $blue
+
+.category-tile__tile-item_red
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $red, 0 0 20px $red
+
+.category-tile__tile-item_green
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $green, 0 0 20px $green
+
+.category-tile__tile-item_yellow
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $yellow, 0 0 20px $yellow
+
+.category-tile__tile-item_orange
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $orange, 0 0 20px $orange
+
+.category-tile__tile-item_purple
+  &:hover
+    @include hover
+      box-shadow: 0 0 10px $purple, 0 0 20px $purple
+
+.category-tile__tile-picture
+  @include media(520)
+    position: relative
+    padding-bottom: 56.061%
+
+.category-tile__tile-image
+  height: 146px
+  @include media(1240)
+    height: 156px
+  @include media(950)
+    height: 180px
+  @include media(700)
+    height: 263px
+  @include media(520)
+    height: 100%
+    position: absolute
+
+.category-tile__tile-text
+  padding: 10px
+  background-color: $light-gray
+  font-size: 16px
+  line-height: 18px
+  flex-grow: 1
+  min-height: 100px
+
+.category-tile__info
+  padding: 0 10px 10px 10px
+  background-color: $light-gray
+  display: flex
+  justify-content: space-between
+  color: $fc_gray
+
+.category-tile__date
+  font-size: 16px
+  line-height: 18px
+
+.category-tile__comment
+  padding-left: 18px
+  font-size: 16px
+  line-height: 18px
+  +bgIcon('ic_comment.svg', 15px, 15px)
+  background-position: center left
+
+.category-tile__more-box
+  margin-top: 10px
+  text-align: center
+
+.category-tile__more-btn
+  display: block
+  width: 100%
+  font-size: 20px
+  line-height: 20px
+  text-decoration: none
+  @include media(1240)
+    font-size: 16px
+    line-height: 18px
+    padding: 10px
+

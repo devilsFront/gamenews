@@ -1,0 +1,110 @@
+.footer
+  margin-bottom: 50px
+
+.footer__cont
+
+.footer__social-list
+  display: flex
+  margin-bottom: 40px
+  justify-content: space-between
+
+.footer__social-item
+  display: block
+  border-radius: 50%
+  width: 100px
+  height: 100px
+  background-color: $gray
+  transition-property: box-shadow, background-color
+  transition-duration: .3s
+  svg
+    width: 100px
+    height: 100px
+  path
+    transition-property: fill
+    transition-duration: .3s
+  &:hover
+    @include hover
+      box-shadow: 0 0 20px $white
+      path
+        fill: $white
+  @include media(1240)
+    width: 50px
+    height: 50px
+    svg
+      width: 50px
+      height: 50px
+
+.footer__social-item-red
+  &:hover
+    @include hover
+      background-color: $red
+      path
+        filter: drop-shadow(0 0 5px $red)
+
+.footer__social-item-purple
+  &:hover
+    @include hover
+      background-color: $purple
+      path
+        filter: drop-shadow(0 0 5px $purple)
+
+.footer__social-item-blue
+  &:hover
+    @include hover
+      background-color: $blue
+      path
+        filter: drop-shadow(0 0 5px $blue)
+
+.footer__social-item-green
+  &:hover
+    @include hover
+      background-color: $green
+      path
+        filter: drop-shadow(0 0 5px $green)
+
+.footer__line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @include media(1240)
+    display: block
+
+.footer__logo
+  margin-left: -20px
+  font-size: 40px
+  line-height: 40px
+  padding: 20px
+  text-decoration: none
+  animation: animate-logo 5s linear infinite
+  @include media(1240)
+    margin-left: -10px
+    padding: 10px
+    font-size: 30px
+    line-height: 30px
+    animation: none
+    color: $fc_white
+    text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 30px $blue, 0 0 40px $blue
+
+.footer__menu-list
+  display: flex
+  @include media(1240)
+    flex-wrap: wrap
+    margin: 0 -14px
+
+.footer__menu-item
+
+.footer__menu-link
+  display: block
+  margin: 0 10px
+  text-decoration: none
+  font-size: 20px
+  line-height: 0.70em
+  font-weight: bold
+  text-transform: uppercase
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004)
+  @include media(1240)
+    margin: 0 5px
+    padding: 10px
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent)
+
+.link_white-color

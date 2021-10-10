@@ -1,0 +1,128 @@
+.search
+  margin-bottom: 50px
+
+.search__caption
+  margin-bottom: 40px
+  color: $fc_white
+  letter-spacing: 5px
+
+.caption_white-blue
+  text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 40px $blue, 0 0 80px $blue, 0 0 160px $blue
+
+.caption_white-red
+  text-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 40px $red, 0 0 80px $red, 0 0 160px $red
+
+.caption_white-green
+  text-shadow: 0 0 10px $green, 0 0 20px $green, 0 0 40px $green, 0 0 80px $green, 0 0 160px $green
+
+.caption_white-yellow
+  text-shadow: 0 0 10px $yellow, 0 0 20px $yellow, 0 0 40px $yellow, 0 0 80px $yellow, 0 0 160px $yellow
+
+.caption_white-orange
+  text-shadow: 0 0 10px $orange, 0 0 20px $orange, 0 0 40px $orange, 0 0 80px $orange, 0 0 160px $orange
+
+.caption_white-purple
+  text-shadow: 0 0 10px $purple, 0 0 20px $purple, 0 0 40px $purple, 0 0 80px $purple, 0 0 160px $purple
+
+.search__header-list
+  display: flex
+  align-items: flex-end
+  margin: 0 -5px 20px
+  padding: 20px 0
+  overflow: auto
+  @include media(1240)
+    margin: 0 -15px 20px
+    &::after, &::before
+      content: ''
+      width: 5px
+      flex-shrink: 0
+
+.search__header-item
+  margin: 0 5px
+
+.search__header-item-btn
+  padding: 5px
+  font-size: 16px
+  line-height: 16px
+  text-transform: uppercase
+
+.search__tile
+
+.search__tile-box
+  margin-bottom: 50px
+  display: flex
+  transition-property: transform
+  transition-duration: .3s
+  @include media(700)
+    display: block
+
+.search__tile-picture
+  margin-right: 20px
+  width: 300px
+  flex-shrink: 0
+  @include media(1240)
+    width: 288px
+  @include media(700)
+    width: 100%
+    margin-right: 0
+    margin-bottom: 20px
+    position: relative
+    padding-bottom: 55.96%
+
+.search__tile-image
+  height: 169px
+  text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 40px $blue, 0 0 80px $blue, 0 0 160px $blue
+  @include media(1240)
+    height: 162px
+  @include media(700)
+    position: absolute
+    top: 0
+    height: 100%
+
+.search__tile-wrapper
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.search__tile-inner
+
+.search__tile-title
+  margin-bottom: 10px
+  color: $fc_gray
+  transition-duration: .3s
+  transition-property: color, text-shadow
+
+.search__tile-text
+  margin-bottom: 20px
+  font-size: 16px
+  line-height: 18px
+  color: $fc_gray
+  @include media(1240)
+    margin-bottom: 10px
+
+.search__tile-read
+  margin-bottom: 20px
+  @include media(1240)
+    margin-bottom: 10px
+
+.search__tile-info
+  display: flex
+  justify-content: space-between
+  font-size: 16px
+  line-height: 18px
+  color: $fc_gray
+  @include media(1240)
+    font-size: 14px
+    line-height: 16px
+
+.search__tile-info-box
+  display: flex
+
+.search__tile-time
+  margin-right: 10px
+
+.search__tile-author
+
+.search__tile-type
+

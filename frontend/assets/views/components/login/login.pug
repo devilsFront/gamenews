@@ -1,0 +1,24 @@
+article.login
+  .login__cont.cont
+    h1.login__caption.caption
+      span В
+      span х
+      span о
+      span д
+    p.login__text
+      | Нет аккаунта?
+      |
+      a.login__link.link_white-blue.link_white-color(href="#") Зарегистрироваться
+    p.registration__error.caption_white-red(data-element="login-error") Пользователь
+    form.login__form(data-role="validation__form")
+      label.login__label.form-label
+        input.login__input.form-input(name="mail" type="email" required data-role="form-input")
+        span.login__name.form-name Почта
+      label.login__label.form-label
+        input.login__input.form-input(name="password" type="password" required data-role="form-input" minlength=8 maxlength=20 placeholder="от 8 до 20 символов" )
+        span.login__name.form-name Пароль
+      button.login__button.button_read.button_read-blue.form-button(disabled=true data-role="form-button") Войти
+    p.login__forgot-text
+      | Забыли пароль?
+      |
+      a.login__forgot-link.link_white-blue.link_white-color(href="#") Восстановить
